@@ -12,44 +12,46 @@
 </head>
 <nav class="navbar navbar-dark bg-primary">
 	<a class="navbar-brand" href="#">Evolve</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-	  <span class="navbar-toggler-icon"></span>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+		aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbarText">
-	  <ul class="navbar-nav mr-auto">
-		<li class="nav-item active">
-		  <a class="nav-link" href="#">Go To Journal <span class="sr-only">(current)</span></a>
-		</li>
-		<li class="nav-item">
-		  <a class="nav-link" href="#">Start New Entry</a>
-		</li>
-	  </ul>
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="journal.html">Go To Journal</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="exercise.html">Manage Categories</a>
+			</li>
+		</ul>
 	</div>
 </nav>
+
 <body>
-		<div class="row">
-			<div class="col-md-6 offset-md-3">
-				<form id="cms">
+	<div class="row">
+		<div class="col-md-6 offset-md-3">
+			<form id="entries">
+				<div class="form-group">
+					<label for="title">Title:</label>
+					<input placeholder="Title" type="text" class="form-control" id="title">
+					<br />
+					<label for="body">Entry:</label>
+					<textarea placeholder="Today's Workout Was..." class="form-control" rows="10" id="body"></textarea>
 					<div class="form-group">
-						<label for="title">Date:</label>
-						<input placeholder="Today's Date" type="text" class="form-control" id="title">
-						<br />
-						<label for="body">Entry:</label>
-						<textarea placeholder="Today's Workout Was..." class="form-control" rows="10" id="body"></textarea>
-						<div class="form-group">
-							<label for="category">Type</label>
-							<select class="custom-select" id="author">
-  						</select>
-						</div>
-						<br />
-						<button type="submit" class="btn btn-success submit">Submit</button>
+						<label for="category">Exercise Category:</label>
+						<select class="custom-select" id="exercise">
+						</select>
 					</div>
-				</form>
-			</div>
+					<br />
+					<button type="submit" class="btn btn-success submit">Submit</button>
+				</div>
+			</form>
 		</div>
 	</div>
+	</div>
 	<!-- Custom Script -->
-	<script src="js/cms.js" type="text/javascript"></script>
+	<script src="js/entries.js" type="text/javascript"></script>
 
 </body>
 
