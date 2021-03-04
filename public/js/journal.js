@@ -77,7 +77,7 @@ $(document).ready(function () {
         var newPostDate = $("<small>");
         var newPostExercise = $("<h5>");
         newPostExercise.text("Exercise Category: " + post.Exercise.name);
-        newPostAuthor.css({
+        newPostExercise.css({
             float: "right",
             color: "blue",
             "margin-top":
