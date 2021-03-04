@@ -28,7 +28,7 @@ $(document).ready(function () {
 
     // A function for creating an exercise. Calls getExercises upon completion
     function upsertExercise(exerciseData) {
-        $.post("/api/exercises", exerciseData)
+        $.post("/api/exercise", exerciseData)
             .then(getExercises);
     }
 
@@ -43,14 +43,14 @@ $(document).ready(function () {
             newTr.append("<td>0</td>");
         }
         newTr.append("<td><a href='/entries?exercise_id=" + exerciseData.id + "'>Go to Posts</a></td>");
-        newTr.append("<td><a href='/journal?exercise_id=" + authorData.id + "'>Create a Post</a></td>");
+        newTr.append("<td><a href='/journal?exercise_id=" + exerciseData.id + "'>Create a Post</a></td>");
         newTr.append("<td><a style='cursor:pointer;color:red' class='delete-exercise'>Delete Exercise</a></td>");
         return newTr;
     }
 
     // Function for retrieving exercises and getting them ready to be rendered to the page
     function getExercises() {
-        $.get("/api/exercises", function (data) {
+        $.get("/api/exercise", function (data) {
             var rowsToAdd = [];
             for (var i = 0; i < data.length; i++) {
                 rowsToAdd.push(createExerciseRow(data[i]));
