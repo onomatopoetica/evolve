@@ -71,7 +71,7 @@ $(document).ready(function () {
                 queryUrl = "/api/posts/" + id;
                 break;
             case "exercise":
-                queryUrl = "/api/exercises/" + id;
+                queryUrl = "/api/exercise/" + id;
                 break;
             default:
                 return;
@@ -92,13 +92,13 @@ $(document).ready(function () {
 
     // A function to get Exercises and then render our list of Exercises
     function getExercises() {
-        $.get("/api/exercises", renderExerciseList);
+        $.get("/api/exercise", renderExerciseList);
     }
     // Function to either render a list of exercises, or if there are none, direct the user to the page
     // to create an exercise first
     function renderExerciseList(data) {
         if (!data.length) {
-            window.location.href = "/exercises";
+            window.location.href = "/exercise";
         }
         $(".hidden").removeClass("hidden");
         var rowsToAdd = [];

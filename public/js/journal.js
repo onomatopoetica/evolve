@@ -69,7 +69,7 @@ $(document).ready(function () {
         newPostCardHeading.addClass("card-header");
         var deleteBtn = $("<button>");
         deleteBtn.text("x");
-        deleteBtn.addClass("delete btn btn-danger");
+        deleteBtn.addClass("delete btn btn-info");
         var editBtn = $("<button>");
         editBtn.text("EDIT");
         editBtn.addClass("edit btn btn-info");
@@ -77,7 +77,7 @@ $(document).ready(function () {
         var newPostDate = $("<small>");
         var newPostExercise = $("<h5>");
         newPostExercise.text("Exercise Category: " + post.Exercise.name);
-        newPostAuthor.css({
+        newPostExercise.css({
             float: "right",
             color: "blue",
             "margin-top":
@@ -129,7 +129,7 @@ $(document).ready(function () {
         entriesContainer.empty();
         var messageH2 = $("<h2>");
         messageH2.css({ "text-align": "center", "margin-top": "50px" });
-        messageH2.html("No entries yet" + partial + ", navigate <a href='/journal" + query +
+        messageH2.html("No entries yet" + partial + ", navigate <a href='/entries" + query +
             "'>here</a> in order to get started.");
         entriesContainer.append(messageH2);
     }
