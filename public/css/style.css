@@ -1,0 +1,43 @@
+#mainPhoto {
+   max-width: 64vw;
+}
+
+ .buttonContainer {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+ }
+
+.btn-info {
+   background-color: #18BC9C ;
+   border-color: #18BC9C ;
+   color: black;
+ }
+
+ .btn-btn-success-submit {
+   background-color: #18BC9C ;
+   border-color: #18BC9C ;
+ }
+
+ a.btn.btn-light {
+   background-color: #18BC9C ;
+   border-color: #18BC9C ;
+   
+ }
+ 
+ .navbar-toggler-icon {
+   color: #18BC9C;
+ }
+
+ .navbar-dark .navbar-nav .nav-link {
+   color: #18BC9C;
+ }
+
+ .navbar-dark .navbar-nav .nav-link:hover {
+    color: white;
+ }
+ 
+ .btn-dark {
+   background-color: #18BC9C ;
+   border-color: #18BC9C ;
+ }
