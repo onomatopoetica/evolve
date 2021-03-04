@@ -7,11 +7,12 @@
    display: flex;
    justify-content: space-between;
  }
+
 .btn-info {
    background-color: #18BC9C ;
    border-color: #18BC9C ;
+   color: black;
  }
-
 
  .btn-btn-success-submit {
    background-color: #18BC9C ;
