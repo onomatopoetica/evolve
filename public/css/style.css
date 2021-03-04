@@ -7,3 +7,24 @@
    display: flex;
    justify-content: space-between;
  }
+.btn-info {
+   background-color: #18BC9C ;
+   border-color: #18BC9C ;
+ }
+
+
+ .btn-btn-success-submit {
+   background-color: #18BC9C ;
+   border-color: #18BC9C ;
+ }
+
+ a.btn.btn-light {
+   background-color: #18BC9C ;
+   border-color: #18BC9C ;
+   
+ }
+
+ .nav-link {
+    color: #18BC9C;
+ }
+ 

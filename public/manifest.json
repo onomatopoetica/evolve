@@ -1,15 +1,17 @@
 {
-    "short_name": "Evolve",
+    "short_name": "Evolve App",
     "name": "Evolve",
     "icons": [
     {
-    "src":"/assets/icon.png",
+    "src":"assets/icon.png",
     "sizes": "192x192",
     "type": "image/png"
     }
     ],
-    "start_url": "/?utm_source=homescreen",
-    "background_color": "#e05a47",
-    "theme_color": "#e05a47",
-    "display": "standalone"
+    "theme_color": "#2196f3",
+    "background_color": "#2196f3",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/"
   }
