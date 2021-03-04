@@ -42,8 +42,8 @@ $(document).ready(function () {
         } else {
             newTr.append("<td>0</td>");
         }
-        newTr.append("<td><a href='/entries?exercise_id=" + exerciseData.id + "'>Go to Posts</a></td>");
-        newTr.append("<td><a href='/journal?exercise_id=" + exerciseData.id + "'>Create a Post</a></td>");
+        newTr.append("<td><a href='/entries?exercise_id=" + exerciseData.id + "'>Create a Post</a></td>");
+        newTr.append("<td><a href='/journal?exercise_id=" + exerciseData.id + "'>Go to Post</a></td>");
         newTr.append("<td><a style='cursor:pointer;color:red' class='delete-exercise'>Delete Exercise</a></td>");
         return newTr;
     }
@@ -87,7 +87,7 @@ $(document).ready(function () {
         var id = listItemData.id;
         $.ajax({
             method: "DELETE",
-            url: "/api/exercises/" + id
+            url: "/api/exercise/" + id
         })
             .then(getExercises);
     }
