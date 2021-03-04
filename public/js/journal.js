@@ -67,19 +67,19 @@ $(document).ready(function () {
         newPostCard.addClass("card");
         var newPostCardHeading = $("<div>");
         newPostCardHeading.addClass("card-header");
+        var editBtn = $("<button>");
+        editBtn.text("Edit");
+        editBtn.addClass("edit btn btn-info");
         var deleteBtn = $("<button>");
         deleteBtn.text("x");
         deleteBtn.addClass("delete btn btn-info");
-        var editBtn = $("<button>");
-        editBtn.text("EDIT");
-        editBtn.addClass("edit btn btn-info");
         var newPostTitle = $("<h2>");
         var newPostDate = $("<small>");
         var newPostExercise = $("<h5>");
         newPostExercise.text("Exercise Category: " + post.Exercise.name);
         newPostExercise.css({
             float: "right",
-            color: "blue",
+            color: "black",
             "margin-top":
                 "-10px"
         });
@@ -90,8 +90,11 @@ $(document).ready(function () {
         newPostBody.text(post.body);
         newPostDate.text(formattedDate);
         newPostTitle.append(newPostDate);
-        newPostCardHeading.append(deleteBtn);
-        newPostCardHeading.append(editBtn);
+        var buttonContainer = $("<div>");
+        buttonContainer.append(editBtn);
+        buttonContainer.addClass("buttonContainer");
+        buttonContainer.append(deleteBtn);
+        newPostCardHeading.append(buttonContainer);
         newPostCardHeading.append(newPostTitle);
         newPostCardHeading.append(newPostExercise);
         newPostCardBody.append(newPostBody);

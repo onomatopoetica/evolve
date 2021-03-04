@@ -2,7 +2,8 @@
    max-width: 64vw;
 }
 
-.btn-info {
-   background-color:  aquamarine;
-   border-color: aquamarine;
+ .buttonContainer {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
  }
