@@ -3,3 +3,15 @@ form.login {
   margin-top: 50px;
 }
 
+.btn {
+  color:  #000;
+  background-color: #18BC9C;
+}
+
+.navbar-brand {
+  color: #18BC9C;
+}
+
+h4 {
+  color:#18BC9C;
+}
