@@ -27,7 +27,7 @@ No sensitive API key information is saved on the server as the user is required 
 1. [Project Status](#Project-Status)
 1. [License](#License)
  
-## Evolve Project Team: <br>
+## Evolve Project Team <br>
 
 #### [Onomatopoetica](https://github.com/onomatopoetica) <br>
 #### [RebeccaChiquete](https://github.com/rebeccachiquete) <br>
