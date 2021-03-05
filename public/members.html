@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar">
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="/logout">
@@ -19,19 +19,31 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h2>Welcome <span class="member-name"></span></h2>
+    <div class="container-fluid">
+        <div class="jumbotron-fluid text-center">
+            <div class="row">
+                <div class="col-1">
+                    <img class="login" src="./stylesheets/evolvePassport.PNG"
+                        style="max-height: 800px; width: auto; max-width: 100%;">
+                </div>
             </div>
         </div>
     </div>
-    <br>
-    <br>
-
-    <div class="evolveBtn text-center">
-        <input type=button class="btn btn-default" onClick="location.href='exercise.html'" value='Go To Evolve'>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h2>Welcome <span class="member-name"></span>!</h2>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="evolveBtn text-center">
+            <input type=button class="btn" onClick="location.href='exercise.html'" value='Go To Evolve'>
+        </div>
     </div>
+
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/members.js"></script>

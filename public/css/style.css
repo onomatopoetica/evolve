@@ -37,7 +37,8 @@
     color: white;
  }
  
- .btn-dark {
+ .btn-dark, button.btn.btn-dark, .btn-success  {
    background-color: #18BC9C ;
    border-color: #18BC9C ;
+   color: #000;
  }
