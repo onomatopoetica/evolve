@@ -72,8 +72,9 @@ Because this application cannot be deployed on GitHub, a walkthrough video demon
 
 #### The following are screenshots of the application and overview of its functionality: <br>
 
-#### Below demonstrates how the PWA (Progressive Web App) works. PWA brings a native app-like user experience to cross-platform web applications. Notice the icon in the upper right area of the browser. This allows you to install `Evolve` onto your device. <br>
+#### Below demonstrates how the PWA (Progressive Web App) works. PWA brings a native app-like user experience to cross-platform web applications. From the app login page, simply select  `Add to Home Screen`  on your device. This allows you to install `Evolve` onto your device. <br>
 
+<img src="./public/css/installPWA.GIF" alt="app video" width="900" height="auto"> <br>
 <img src="./public/css/install.png" alt="app screenshot" width="900" height="auto"> <br>
 <img src="./public/css/login.png" alt="app screenshot" width="900" height="auto">
 <img src="./public/css/main.png" alt="app screenshot" width="900" height="auto">
