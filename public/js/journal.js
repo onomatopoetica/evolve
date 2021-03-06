@@ -100,7 +100,7 @@ $(document).ready(function () {
         newPostCardBody.append(newPostBody);
         newPostCard.append(newPostCardHeading);
         newPostCard.append(newPostCardBody);
-        newPostCard.data("post", post);
+        newPostCard.attr("id", post.id);
         return newPostCard;
     }
 
@@ -109,8 +109,9 @@ $(document).ready(function () {
         var currentPost = $(this)
             .parent()
             .parent()
-            .data("post");
-        deletePost(currentPost.id);
+            .parent()
+        // .data("post");
+        deletePost(currentPost.attr("id"));
     }
 
     // This function figures out which post we want to edit and takes it to the appropriate url
@@ -118,8 +119,9 @@ $(document).ready(function () {
         var currentPost = $(this)
             .parent()
             .parent()
-            .data("post");
-        window.location.href = "/journal?post_id=" + currentPost.id;
+            .parent()
+        // .data("post");
+        window.location.href = "/entries?post_id=" + currentPost.attr("id");
     }
 
     // This function displays a message when there are no posts
