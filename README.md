@@ -14,7 +14,7 @@ No sensitive API key information is saved on the server as the user is required 
 **NOTE:** Since this application cannot be deployed on GitHub, the deployed app can be found on [Heroku](https://evolve-journal.herokuapp.com/). Please see the **Getting Started** section for more information regarding installation, usage, contribution guidelines, tests and where to go for questions.
     
 ## Table of Contents
-1. [Project Team](#Evolve-Project-Team)
+1. [Evolve Project Team](#Evolve-Project-Team)
 1. [About The Project](#About-The-Project)
 1. [Project Links](#Project-Links)
 1. [Demo](#Demo)
